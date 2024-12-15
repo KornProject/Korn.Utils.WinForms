@@ -4,7 +4,7 @@ partial class RelocableForm
     /// <summary>
     /// Required designer variable.
     /// </summary>
-    private System.ComponentModel.IContainer components = null;
+    private global::System.ComponentModel.IContainer components = null;
 
     /// <summary>
     /// Clean up any resources being used.
@@ -46,7 +46,8 @@ partial class RelocableForm
 
         void Inititialize(Control control)
         {
-            if (control is Form or Label)
+            if (control is Form or Label or Panel &&
+                control is not LinkLabel)
                 control.MouseDown += MouseDownRelocate;
 
             foreach (var child in control.Controls)
