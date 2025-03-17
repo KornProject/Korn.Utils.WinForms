@@ -37,7 +37,7 @@ partial class RelocableForm
     /// </summary>
     private void InitializeComponent()
     {
-        this.components = new System.ComponentModel.Container();
+        this.components = new global::System.ComponentModel.Container();
     }
 
     protected void EndInitializeComponents()
