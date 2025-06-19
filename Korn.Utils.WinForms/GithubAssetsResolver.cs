@@ -1,4 +1,5 @@
-﻿using Korn.Utils.GithubExplorer;
+﻿using Korn.Logger;
+using Korn.Utils.GithubExplorer;
 
 namespace Korn.Utils.WinForms;
 public class GithubAssetsResolver
